@@ -929,12 +929,15 @@
 
         <div class="row block-9">
           <div class="col-md-8">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form action="https://formspree.io/f/mzerjdkj" method="POST" class="bg-light p-4 p-md-5 contact-form">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <input
                       type="text"
+                      name="name"
+                      required
                       class="form-control"
                       placeholder="Your Name"
                     />
@@ -943,7 +946,9 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <input
-                      type="text"
+                      type="email"
+                      name="email"
+                      required
                       class="form-control"
                       placeholder="Your Email"
                     />
@@ -953,6 +958,7 @@
                   <div class="form-group">
                     <input
                       type="text"
+                      name="_subject"
                       class="form-control"
                       placeholder="Subject"
                     />
@@ -961,8 +967,8 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <textarea
-                      name=""
-                      id=""
+                      name="message"
+                      required
                       cols="30"
                       rows="7"
                       class="form-control"
